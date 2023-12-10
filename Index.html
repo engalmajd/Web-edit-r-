@@ -1,0 +1,51 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>mecdiddin çalışmak sitesi</title>
+    <!-- Code Mirror Style -->
+    <link rel="stylesheet" href="./libraries/codemirror/codemirror.min.css">
+    <link rel="stylesheet" href="./libraries/codemirror/theme/panda-syntax.min.css">
+    <!-- Page Style -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+
+<body>
+    <div id="container">
+        <ul id="menu">
+            <li id="home"><a href="https://github.com/engalmajd"><img src="./images/home.PNG"></a><span class="tooltiptext"> Ana sayfa</span></li>
+            <li id="downloadCode"><img src="./images/download.PNG"><span class="tooltiptext">kod ekle</span></li>
+            <li id="toggleTheme"><img src="./images/moon.PNG"><span class="tooltiptext"> Renkler değiştermek</span></li>
+            <li id="toggleView"><img src="./images/rotate.PNG"><span class="tooltiptext">Geniş değiştermek</span></li>
+            <li id="toggleCodeResultMobile"><img src="./images/code.PNG"><span class="tooltiptext"> Arayüzü size değiştermek </span></li>
+            <li id="run" class="tooltip"><img src="./images/run.PNG"><span class="tooltiptext">kodu çalıştırmak </span></li>
+        </ul>
+        <span id="dimensions"></span>
+        <div id="main">
+            <div id="editorContainer">
+                <textarea name="editor" id="editor"></textarea>
+            </div>
+            <div id="editorResultContainer">
+                <div id="editorResult">
+                    <iframe id="iframeResult" style="height:99%; width:100%; border:none;" allowfullscreen="true"></iframe>
+                </div>
+            </div>
+            <div id="dragbar"></div>
+        </div>
+    </div>
+    <div id="iframeFix"></div>
+    <!-- Code Mirror Scripts -->
+    <script src="./libraries/jquery/dist/jquery.min.js"></script>
+    <script src="./libraries/codemirror/codemirror.min.js"></script>
+    <script src="./libraries/codemirror/addon/edit/closetag.min.js"></script>
+    <script src="./libraries/codemirror/mode/xml/xml.min.js"></script>
+    <script src="./libraries/codemirror/mode/javascript/javascript.min.js"></script>
+    <script src="./libraries/codemirror/mode/css/css.min.js"></script>
+    <script src="./libraries/codemirror/mode/htmlmixed/htmlmixed.min.js"></script>
+    <script src="./libraries/codemirror/addon/display/placeholder.min.js"></script>
+    <!-- Page Script -->
+    <script src="./js/app.js"></script>
+</body>
+</html>
